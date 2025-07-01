@@ -1,0 +1,99 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+hwlp me create a gitignore
+
+Edit
+
+Chrome Extension .gitignore
+Code 
+This .gitignore file covers:
+
+🔒 Security (Most Important):
+
+.env files (your API keys and sensitive data)
+public/manifest.json (generated file with real client ID)
+public/background.js and public/content.js (if generated with API keys)
+🏗️ Build Files:
+
+node_modules/
+dist/ and build/ directories
+Generated files
+💻 Development:
+
+Editor files (VS Code, IntelliJ, etc.)
+OS files (Mac .DS_Store, Windows Thumbs.db)
+Log files
+📦 Chrome Extension Specific:
+
+.crx files (packaged extensions)
+.pem files (private keys)
+Just create a file named .gitignore in your project root and paste this content. Now when you run:
+
+bash
+git add .
+git commit -m "Initial commit"
+git push
+Your sensitive files will be safely excluded from GitHub!
+
+Pro tip: You can also create a .env.example file to show others what environment variables they need:
+
+# .env.example
+API_KEY=your_youtube_api_key_here
+CLIENT_ID=your_oauth_client_id_here
+This file IS safe to commit since it doesn't contain real values.
+
+
+
+
+
+
+
+
+# Environment variables (contains sensitive API keys, client IDs)
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# Generated manifest.json with real client ID
+public/manifest.json
+
+# Generated JavaScript files with API keys
+public/background.js
+public/content.js
+
+# Build output directory (if using webpack/build tools)
+dist/
+build/
+
+# Node.js dependencies
+node_modules/
+
+# npm/yarn lock files (optional - some prefer to commit these)
+package-lock.json
+yarn.lock
+
